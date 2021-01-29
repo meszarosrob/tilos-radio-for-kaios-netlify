@@ -1,6 +1,11 @@
 [build]
     publish = "public/"
 
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Access-Control-Allow-Origin= "*"
+
 [[redirects]]
     from = "/live/high"
     to = "http://stream.tilos.hu:8000/tilos"
